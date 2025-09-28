@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мобільний блокнот</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="top-title">Блокнот</div>
+        </header>
+
+        <div class="accent-bar"></div>
+
+        <main class="main">
+            <section id="editorSection" class="panel">
+                <form id="noteForm" class="editor" autocomplete="off">
+                    <input id="title" class="title" type="text" placeholder="ЗАГОЛОВОК" required>
+                    <textarea id="content" class="content" placeholder="Почни писати тут..." rows="6"
+                        required></textarea>
+
+                    <div class="form-row">
+                        <label for="priority" class="visually-hidden">Пріоритет</label>
+                        <select id="priority" class="priority-select">
+                            <option value="important">Важливий</option>
+                            <option value="medium">Помирний</option>
+                            <option value="low">Не важливий</option>
+                        </select>
+                    </div>
+
+                    <div class="actions">
+                        <button id="saveBtn" type="submit" class="btn save">Зберегти</button>
+                    </div>
+                </form>
+                <div id="status" class="status"></div>
+            </section>
+
+            <section id="archiveSection" class="panel archive-panel">
+                <h2 class="section-title">Збережени нотатки</h2>
+                <div id="archiveList" class="notes-list"></div>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
