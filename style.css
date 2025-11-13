@@ -282,3 +282,164 @@ body {
 .small-btn.del:active {
     transform: scale(0.97);
 }
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .topbar {
+        height: 50px;
+        padding: 6px 10px;
+    }
+
+    .top-title {
+        font-size: 18px;
+    }
+
+    .accent-bar {
+        margin: 0 10px;
+        height: 4px;
+    }
+
+    .main {
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .content {
+        font-size: 14px;
+        min-height: 120px;
+        padding: 10px;
+    }
+
+    .priority-select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn, .small-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .section-title {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .notes-list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .note-card {
+        padding: 10px;
+    }
+
+    .note-card h3 {
+        font-size: 15px;
+    }
+
+    .note-card p {
+        font-size: 14px;
+    }
+
+    .note-actions {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .priority-badge {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .status {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 15px;
+    }
+
+    .priority-select {
+        width: 180px;
+    }
+
+    .notes-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .note-card h3 {
+        font-size: 16px;
+    }
+
+    .note-card p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #editorSection,
+    #archiveSection {
+        margin-top: 0;
+    }
+
+    .section-title {
+        margin-top: 20px;
+    }
+
+    .notes-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .section-title {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .notes-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
